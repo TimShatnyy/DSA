@@ -1,14 +1,13 @@
 import java.util.ArrayList;
 import java.util.Arrays;
 
-
-// Algorithm for searching a graph
-// depth - vertical before horizontal path
+// Algorithm: Depth-First Search
+// Runtime: O(|V|+|E|)
 // used to:
 // - Detect Cycles in a Directed graph
 // - Find the shortest path
 // - Determine the connectivity in a network
-// Runtime: O(|V|+|E|)
+// - classify the edges of the input graph
 
 
 // Depth-first search explores edges out
@@ -48,6 +47,8 @@ public class DFS {
         visitPre[node] = timer;
         // Visited recursively all vertices
         // which are not yet visited
+
+        //
         for (int neighbourNode : adjList[node]){
             if (!visited[neighbourNode]){
                 dfsRecord(adjList, visited, neighbourNode, result, visitPre, visitPost);

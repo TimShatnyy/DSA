@@ -1,6 +1,11 @@
 import java.util.ArrayList;
 import java.util.Arrays;
 
+// Algorithm: Topological Sort
+// Runtime: O(|V|+|E|) (as DFS)
+// usage:
+// - linear ordering of vertices in the Directed Acyclic Graph (for every edge {u, v} u appears before v)
+
 public class TopologicalSort {
 
     // Variable to keep track of time
@@ -24,12 +29,13 @@ public class TopologicalSort {
                           ArrayList<Integer> result,
                           int[] visitPre,
                           int[] visitPost
-    )
+                          )
     {
         visited[node] = true;
 
         timer++;
         visitPre[node] = timer;
+
         // Visited recursively all vertices
         // which are not yet visited
         for (int neighbourNode : adjList[node]){
@@ -37,10 +43,11 @@ public class TopologicalSort {
                 dfsRecord(adjList, visited, neighbourNode, result, visitPre, visitPost);
             }
         }
+
         timer++;
         visitPost[node] = timer;
 
-        // Topological Sorting - add node to the result once it has visited all its neighbours
+        // Note: Topological Sorting - add node to the front of a linked list once it has (recursively) visited all its neighbours
         result.add(node);
 
         System.out.println("Node: " + node + " | Visit: " + visitPre[node] + " | Leave: " + visitPost[node]);
