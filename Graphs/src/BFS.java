@@ -13,8 +13,8 @@ public class BFS {
     }
 
     static ArrayList<Integer> bfs(int[][] adjList) {
-        int V = adjList.length;
-        boolean[] visited = new boolean[V];
+        int vertices = adjList.length;
+        boolean[] visited = new boolean[vertices];
         ArrayList<Integer> result = new ArrayList<>();
 
         // start with the source node
@@ -26,12 +26,14 @@ public class BFS {
         // repeat until the queue is not empty
         while (!queue.isEmpty()) {
             int currentNode = queue.poll();
+            // add currently dequeued node to the resulting array
             result.add(currentNode);
 
             // check all neighbours first
             for (int neighbour : adjList[currentNode]) {
                 if (!visited[neighbour]) {
                     visited[neighbour] = true;
+                    // add all unvisited neighbours to the queue
                     queue.add(neighbour);
                 }
             }
