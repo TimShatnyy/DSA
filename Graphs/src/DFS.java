@@ -76,11 +76,6 @@ public class DFS {
                 dfsRecord(adjList, visited, i, result, visitPre, visitPost);
         }
 
-        // Topological Sorting
-        MergeSort.mergeSort(visitPost);
-        int[] topologicalSort = ReverseSort.reverse(visitPost);
-        System.out.println(Arrays.toString(topologicalSort));
-
         return result;
     }
 

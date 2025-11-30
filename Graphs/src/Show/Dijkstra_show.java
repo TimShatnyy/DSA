@@ -1,13 +1,16 @@
-import java.util.ArrayList;
+package Show;
+
 import java.util.Arrays;
 import java.util.PriorityQueue;
 
 // Algorithm: Dijkstra
-// Runtime: O((|V|+|E|)log|V|)
+// Note: Edsger W. Dijkstra (1930 – 2002) - Dutch computer scientist, mathematician, programmer.
+// Runtime: O((|V|log|V| + |E|)
 // usage:
-// - find shortest path distances from the source node to every other node in a graph
+// - find shortest distances from the source node to every other node in a graph
 
-public class Dijkstra {
+
+public class Dijkstra_show {
     public static void main(String[] args) {
         // Directed Graph
         int[][][] adjList = {
@@ -18,47 +21,44 @@ public class Dijkstra {
                 { }
         };
 
-        System.out.println(Arrays.toString(dijkstra(adjList, 0)));
+//        System.out.println(Arrays.toString(dijkstra(adjList, 0)));
     }
 
 
     static int[] dijkstra(int[][][] adjList, int source) {
         int vertices = adjList.length;
 
-        // create a min-heap data structure for pairs of (distance, node)
-        PriorityQueue<int[]> minHeap = new PriorityQueue<>((a,b) -> a[0] - b[0]);
+        PriorityQueue<int[]> minHeap = new PriorityQueue<>((a, b) -> a[0] - b[0]);
 
-        // distances array stores shortest distance from source to each node
         int[] distances = new int[vertices];
         Arrays.fill(distances, Integer.MAX_VALUE);
 
-        // Start from the source node
-        distances[source] = 0; // distance to itself is 0
+        distances[source] = 0;
         minHeap.offer(new int[] {0, source});
 
-        // process the queue of min-heap until all reachable vertices are worked-though
         while (!minHeap.isEmpty()) {
             int[] top = minHeap.poll();
             int currentDistance = top[0];
             int currentVertex = top[1];
 
-            // if current distance is not the shortest one, skip it
             if (currentDistance > distances[currentVertex])
                 continue;
 
-            // explore all neighbours of the current vertex
             for (int[] neighbour : adjList[currentVertex]) {
                 int neighbourVertex = neighbour[0];
                 int neighbourDistance = neighbour[1];
 
-                // if there is a shorter path to neighbour through current vertex, update it
                 if (distances[currentVertex] + neighbourDistance < distances[neighbourVertex]) {
                     distances[neighbourVertex] = distances[currentVertex] + neighbourDistance;
-                    minHeap.offer(new int[]{distances[neighbourVertex], neighbourVertex});
+                    minHeap.offer(new int[] {distances[neighbourVertex], neighbourVertex});
                 }
             }
         }
 
         return distances;
     }
+
+
+
+
 }
