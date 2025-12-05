@@ -5,6 +5,7 @@
 # Log file
 *.log
 
-/Graphs/src/Show/
-/out/
-.idea/
+Graphs/src/Show
+Sorting/src/Show
+.idea
+/out

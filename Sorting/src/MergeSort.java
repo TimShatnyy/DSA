@@ -1,7 +1,10 @@
 import java.util.Arrays;
 
-public class MergeSort {
+// Algorithm: Merge Sort
+// Runtime: O(n log n)
+// Memory: O(n)
 
+public class MergeSort {
 
     public static void main(String[] args) {
 
