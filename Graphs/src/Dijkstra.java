@@ -8,6 +8,7 @@ import java.util.PriorityQueue;
 // - find shortest path distances from the source node to every other node in a graph
 
 public class Dijkstra {
+
     public static void main(String[] args) {
         // Directed Graph
         int[][][] adjList = {

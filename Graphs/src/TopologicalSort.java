@@ -11,8 +11,6 @@ public class TopologicalSort {
     // Variable to keep track of time
     static int timer = 0;
 
-
-
     public static void main(String[] args){
         int[][] adjList =  {{1, 2}, {0, 2}, {0, 1, 3, 4}, {2}, {2}};
         //  (1) - (2) - (4)
