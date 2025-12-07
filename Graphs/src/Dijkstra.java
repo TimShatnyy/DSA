@@ -6,6 +6,7 @@ import java.util.PriorityQueue;
 // Runtime: O((|V|+|E|)log|V|)
 // usage:
 // - find shortest path distances from the source node to every other node in a graph
+// - does not work with negative edge weights
 
 public class Dijkstra {
 
