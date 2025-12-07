@@ -1,6 +1,6 @@
 This repository is meant as contribution to studying data structures and algorithms basics. For now all the code is made in Java.
 <br /> <br />
-Codes are taken from many resources and collected here. Mostly the code comes from the [geeksforgeeks.org](geeksforgeeks.org) and [W3school](w3schools.com). 
+Codes are taken from many resources and collected here. Mostly the code comes from the [geeksforgeeks.org](https://www.geeksforgeeks.org/) and [W3school](https://www.w3schools.com/). 
 <br /> <br />
 **Recommended further resources to study:** <br />
 https://www.w3schools.com/dsa/index.php <br />
