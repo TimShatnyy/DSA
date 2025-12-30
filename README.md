@@ -24,7 +24,7 @@ Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, and Clifford Stein - I
 
 | Algorithm      | TIme                                                          | Swaps         | Memory | In-place |
 | -------------- | ------------------------------------------------------------- | ------------- | ------ | -------- |
-| [Bubble Sort](BubbleSort.java)    | $O(n^2)$                                                      | $O(n^2)$      | $O(1)$ | Yes      |
+| [Bubble Sort](Sorting/src/BubbleSort.java)    | $O(n^2)$                                                      | $O(n^2)$      | $O(1)$ | Yes      |
 | Selection sort | $O(n^2)$                                                      | $O(n)$        | $O(1)$ | Yes      |
 | Insertion Sort | $O(n \ log \ n)$                                              | $O(n^2)$      | $O(1)$ | Yes      |
 | Merge Sort     | $O(n \log n)$                                                 | $O(n \log n)$ | $O(n)$ | No       |
