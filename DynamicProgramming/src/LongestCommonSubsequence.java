@@ -1,3 +1,8 @@
+// Algorithm: Longest Common Subsequence
+// Runtime: O(m*n)
+// use:
+// - find the longest common subsequence of character between two strings
+
 public class LongestCommonSubsequence {
 
     public static void main(String[] args)

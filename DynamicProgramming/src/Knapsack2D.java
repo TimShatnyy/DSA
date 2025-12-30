@@ -1,3 +1,8 @@
+// Algorithm: Knapsack 0-1
+// Runtime: O(n*W), Space: O(n*W)
+// use:
+// - find the optimal profit with the given capacity of the backpack
+
 public class Knapsack2D {
 
     public static void main(String[] args) {

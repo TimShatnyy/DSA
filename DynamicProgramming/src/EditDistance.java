@@ -1,7 +1,7 @@
 // Algorithm: Edit Distance
 // Runtime: O(n*m), Space: O(n*m)
 // use:
-// - find the number of characters
+// - find the number of characters by which two strings differ
 
 public class EditDistance {
 
