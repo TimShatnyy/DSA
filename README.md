@@ -25,11 +25,11 @@ Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, and Clifford Stein - I
 | Algorithm      | TIme                                                              | Swaps           | Memory | In-place |
 | -------------- | -------------------------------------------------------------     | -------------   | ------ | -------- |
 | [Bubble Sort](Sorting/src/BubbleSort.java)    | $O(n^2)$                                                      | $O(n^2)$      | $O(1)$ | Yes      |
-| Selection sort | $O(n^2)$                                                          | $O(n)$          | $O(1)$ | Yes      |
-| Insertion Sort | $O(n \ \log \ n)$                                                 | $O(n^2)$        | $O(1)$ | Yes      |
-| Merge Sort     | $O(n \ \log \ n)$                                                 | $O(n \ \log \ n)$ | $O(n)$ | No       |
-| Quicksort      | $O(n^2)$ - sorted input<br><br>$O(n \ log \ n)$ - rand. input     |                 | $O(1)$ | Yes      |
-| Heapsort       | $O (n \ \log \ n)$                                                |                 | $O(1)$ | Yes      |
+| [Selection sort](Sorting/src/SelectionSort.java) | $O(n^2)$                                                          | $O(n)$          | $O(1)$ | Yes      |
+| [Insertion Sort](Sorting/src/InsertionSort.java) | $O(n \ \log \ n)$                                                 | $O(n^2)$        | $O(1)$ | Yes      |
+| [Merge Sort](Sorting/src/MergeSort.java)     | $O(n \ \log \ n)$                                                 | $O(n \ \log \ n)$ | $O(n)$ | No       |
+| [Quicksort](Sorting/src/QuickSort.java)      | $O(n^2)$ - sorted input<br><br>$O(n \ log \ n)$ - rand. input     |                 | $O(1)$ | Yes      |
+| [Heapsort](Sorting/src/Heapsort.java)       | $O (n \ \log \ n)$                                                |                 | $O(1)$ | Yes      |
 
 ### Dynamic Programming
 $n$ - input array length
