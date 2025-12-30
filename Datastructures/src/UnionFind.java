@@ -1,10 +1,13 @@
 // Data structure: Union-Find
-// Runtime: O(n), space O(n)
+// Runtime (over many operations): O(α(n))
+// α(n) - inverse Ackermann function, which grows extremely slow, making find and union almost constant time
+// Space: O(n)
 
 public class UnionFind {
 
     private int[] parent, rank;
 
+    // Runtime: O(n)
     public UnionFind(int vertices) {
         parent = new int[vertices];
         rank = new int[vertices];
@@ -15,6 +18,7 @@ public class UnionFind {
         }
     }
 
+    // Runtime: O(α(n)) amortized
     public int find(int element) {
         if (parent[element] != element) { // if the element is not its own representative
             // recursively traverse to the representative of the given element
@@ -23,6 +27,7 @@ public class UnionFind {
         return parent[element];
     }
 
+    // Runtime: O(α(n)) amortized
     public void union(int element1, int element2) {
         int representative1 = find(element1);
         int representative2 = find(element2);
