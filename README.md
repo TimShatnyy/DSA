@@ -22,14 +22,14 @@ Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, and Clifford Stein - I
 
 ### Sort 
 
-| Algorithm      | TIme                                                          | Swaps         | Memory | In-place |
-| -------------- | ------------------------------------------------------------- | ------------- | ------ | -------- |
+| Algorithm      | TIme                                                              | Swaps           | Memory | In-place |
+| -------------- | -------------------------------------------------------------     | -------------   | ------ | -------- |
 | [Bubble Sort](Sorting/src/BubbleSort.java)    | $O(n^2)$                                                      | $O(n^2)$      | $O(1)$ | Yes      |
-| Selection sort | $O(n^2)$                                                      | $O(n)$        | $O(1)$ | Yes      |
-| Insertion Sort | $O(n \ log \ n)$                                              | $O(n^2)$      | $O(1)$ | Yes      |
-| Merge Sort     | $O(n \log n)$                                                 | $O(n \log n)$ | $O(n)$ | No       |
-| Quicksort      | $O(n^2)$ - sorted input<br><br>$O(n \ log \ n)$ - rand. input |               | $O(1)$ | Yes      |
-| Heapsort       | $O (n \ log \ n)$                                             |               | $O(1)$ | Yes      |
+| Selection sort | $O(n^2)$                                                          | $O(n)$          | $O(1)$ | Yes      |
+| Insertion Sort | $O(n \ \log \ n)$                                                 | $O(n^2)$        | $O(1)$ | Yes      |
+| Merge Sort     | $O(n \log \ n)$                                                   | $O(n \log \ n)$ | $O(n)$ | No       |
+| Quicksort      | $O(n^2)$ - sorted input<br><br>$O(n \ log \ n)$ - rand. input     |                 | $O(1)$ | Yes      |
+| Heapsort       | $O (n \ \log \ n)$                                                |                 | $O(1)$ | Yes      |
 
 ### Dynamic Programming
 $n$ - input array length
@@ -89,18 +89,18 @@ $l$ - length
 | -------------- | ------------------------------------------ | ---------------------- | ----------- |
 | Stack (LIFO)   | Singly Linked List                         | `push`, `pop`, `top`   | $O(1)$ |
 | Queue (FIFO)   | Singly Linked List <br>(with tail pointer) | `enqueue`, `dequeue`   | $O(1)$      |
-| Priority Queue | (Max-)heap                                 | `insert`, `extractMax` | $O(\log n)$ |
+| Priority Queue | (Max-)heap                                 | `insert`, `extractMax` | $O(\log \ n)$ |
 
 ### ADT Dictionary
 $x$ - key, $W$ - dictionaty 
 
-| Implementation                                     | $\text{search}(x, W)$                   | $\text{insert}(x, W)$ | $\text{delete}(x, W)$ |
-| -------------------------------------------------- | --------------------------------------- | --------------------- | --------------------- |
-| Unsorted Array                                     | $O(n)$                                  | $O(1)$                | $O(n)$                |
-| Sorted Array                                       | $O(\log n)$                             | $O(n)$                | $O(n)$                |
-| Doubly Linked List                                 | $O(n)$                                  | $O(1)$                | $O(n)$                |
-| Naive Binary Search Tree<br>($h$ - height of tree) | $O(h)$ <br>(up to $O(n)$ if unbalanced) | $O(h)$                | $O(h)$                |
-| 2-3 Tree                                           | $O(\log n)$                             | $O(\log n)$           | $O(\log n)$           |
-| AVL Tree                                           | $O(\log n)$                             | $O(\log n)$           | $O(\log n)$           |
+| Implementation                                     | $\text{search}(x, W)$                   | $\text{insert}(x, W)$   | $\text{delete}(x, W)$ |
+| -------------------------------------------------- | --------------------------------------- | ---------------------   | --------------------- |
+| Unsorted Array                                     | $O(n)$                                  | $O(1)$                  | $O(n)$                |
+| Sorted Array                                       | $O(\log n)$                             | $O(n)$                  | $O(n)$                |
+| Doubly Linked List                                 | $O(n)$                                  | $O(1)$                  | $O(n)$                |
+| Naive Binary Search Tree<br>($h$ - height of tree) | $O(h)$ <br>(up to $O(n)$ if unbalanced) | $O(h)$                  | $O(h)$                |
+| 2-3 Tree                                           | $O(\log n)$                             | $O(\log \ n)$           | $O(\log \ n)$         |
+| AVL Tree                                           | $O(\log n)$                             | $O(\log \ n)$           | $O(\log \ n)$         |
 
 
