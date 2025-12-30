@@ -24,7 +24,7 @@ Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, and Clifford Stein - I
 
 | Algorithm      | TIme                                                          | Swaps         | Memory | In-place |
 | -------------- | ------------------------------------------------------------- | ------------- | ------ | -------- |
-| Bubble Sort    | $O(n^2)$                                                      | $O(n^2)$      | $O(1)$ | Yes      |
+| [Bubble Sort](BubbleSort.java)    | $O(n^2)$                                                      | $O(n^2)$      | $O(1)$ | Yes      |
 | Selection sort | $O(n^2)$                                                      | $O(n)$        | $O(1)$ | Yes      |
 | Insertion Sort | $O(n \ log \ n)$                                              | $O(n^2)$      | $O(1)$ | Yes      |
 | Merge Sort     | $O(n \log n)$                                                 | $O(n \log n)$ | $O(n)$ | No       |
@@ -87,7 +87,7 @@ $l$ - length
 
 | ADT            | Typical Implementation                     | Opertions              | Runtime     |
 | -------------- | ------------------------------------------ | ---------------------- | ----------- |
-| Stack (LIFO)   | Singly Linked List                         | `push`, `pop`, `top`   | $\Theta(1)$ |
+| Stack (LIFO)   | Singly Linked List                         | `push`, `pop`, `top`   | $O(1)$ |
 | Queue (FIFO)   | Singly Linked List <br>(with tail pointer) | `enqueue`, `dequeue`   | $O(1)$      |
 | Priority Queue | (Max-)heap                                 | `insert`, `extractMax` | $O(\log n)$ |
 
