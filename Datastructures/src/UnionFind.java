@@ -1,4 +1,4 @@
-// Data structure: Union-Find
+// Data structure: Union-Find (optimised with path compression and rank)
 // Runtime (over many operations): O(α(n))
 // α(n) - inverse Ackermann function, which grows extremely slow, making find and union almost constant time
 // Space: O(n)

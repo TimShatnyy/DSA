@@ -105,4 +105,11 @@ $x$ - key, $W$ - dictionary
 | 2-3 Tree                                           | $O(\log \ n)$                            | $O(\log \ n)$         | $O(\log \ n)$         |
 | AVL Tree                                           | $O(\log \ n)$                            | $O(\log \ n)$         | $O(\log \ n)$         |
 
+### [ADT Union-find](Datastructures/src/UnionFind.java)
 
+| Operation   | Naive Union–Find  | Optimized Union–Find (rank + path compression)    |
+|-------------|-------------------|---------------------------------------------------|
+| make-set    | O(n)              | O(n)                                              |
+| find / same | O(1)              | O(α(n)) amortized                                 |
+| union       | O(n)              | O(α(n)) amortized                                 |
+| Space       | O(n)              | O(n)                                              |
