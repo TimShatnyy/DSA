@@ -22,14 +22,14 @@ Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, and Clifford Stein - I
 
 ### Sort 
 
-| Algorithm      | TIme                                                              | Swaps           | Memory | In-place |
-| -------------- | -------------------------------------------------------------     | -------------   | ------ | -------- |
-| [Bubble Sort](Sorting/src/BubbleSort.java)    | $O(n^2)$                                                      | $O(n^2)$      | $O(1)$ | Yes      |
-| [Selection sort](Sorting/src/SelectionSort.java) | $O(n^2)$                                                          | $O(n)$          | $O(1)$ | Yes      |
-| [Insertion Sort](Sorting/src/InsertionSort.java) | $O(n \ \log \ n)$                                                 | $O(n^2)$        | $O(1)$ | Yes      |
-| [Merge Sort](Sorting/src/MergeSort.java)     | $O(n \ \log \ n)$                                                 | $O(n \ \log \ n)$ | $O(n)$ | No       |
-| [Quicksort](Sorting/src/Quicksort.java)      | $O(n^2)$ - sorted input<br><br>$O(n \ log \ n)$ - rand. input     |                 | $O(1)$ | Yes      |
-| [Heapsort](Sorting/src/Heapsort.java)       | $O (n \ \log \ n)$                                                |                 | $O(1)$ | Yes      |
+| Algorithm                                        | Time                                                              | Swaps             | Memory | In-place |
+| --------------                                   | -------------------------------------------------------------     | -------------     | ------ | -------- |
+| [Bubble Sort](Sorting/src/BubbleSort.java)       | $O(n^2)$                                                          | $O(n^2)$          | $O(1)$ | Yes      |
+| [Selection sort](Sorting/src/SelectionSort.java) | $O(n^2)$                                                          | $O(n)$            | $O(1)$ | Yes      |
+| [Insertion Sort](Sorting/src/InsertionSort.java) | $O(n \ \log \ n)$                                                 | $O(n^2)$          | $O(1)$ | Yes      |
+| [Merge Sort](Sorting/src/MergeSort.java)         | $O(n \ \log \ n)$                                                 | $O(n \ \log \ n)$ | $O(n)$ | No       |
+| [Quicksort](Sorting/src/Quicksort.java)          | $O(n^2)$ - sorted input<br><br>$O(n \ log \ n)$ - rand. input     |                   | $O(1)$ | Yes      |
+| [Heapsort](Sorting/src/Heapsort.java)            | $O (n \ \log \ n)$                                                |                   | $O(1)$ | Yes      |
 
 ### Dynamic Programming
 $n$ - input array length
@@ -50,19 +50,19 @@ $n$ - input array length
 $V = n$ (number of vertices $\lvert V \rvert$) 
 $E = m$ (number of edges $\lvert E \rvert$)
 
-| Algorithm            | Time                                                                                                                        |
-| -------------------- | --------------------------------------------------------------------------------------------------------------------------- |
-| [DFS](Graphs/src/BFS.java)                 | $O(V + E)$                                                                                                                  |
-| [BFS](Graphs/src/DFS.java)                   | $O(V + E)$                                                                                                                  |
-| [Topological Sort](Graphs/src/TopologicalSort.java)     | $O(V + E)$                                                                                                                  |
-| [Dijsktra](Graphs/src/Dijkstra.java)              | $O((E+V)\log V)$                                                                                                            |
-| Borůvka (MST)        | $O(E \ \log \ V)$                                                                                                           |
-| [Kruskal (MST)](Graphs/src/Dijkstra.java)             | $O(E \ \log \ E)$ or $O(E \ \log \ V)$                                                                                      |
-| Prim (MST)                | Binary heap: <br>$O(E \ \log \ V)$<br><br>Fibonacci heap: <br>$O(E + V \log \ V)$<br><br>Matrix: <br>$O(V^2)$               |
-| [Bellman-Ford](Graphs/src/BellmanFord.java)        | $O(V\cdot E)$                                                                                                               |
-| [Floyd-Warshall](Graphs/src/FloydWarshall.java)       | $O(V^3)$                                                                                                                    |
-| Johnson              | Using binary-heap Dijkstra:<br>$O(V(E+V)\log V)$                                                                            |
-| Matrixmultiplikation | Standard:<br>$O(n^3)$<br><br>It. squaring:<br>$O(n^3 \ \log \ n)$<br><br>With Strassen:<br>$O(n^{\log_2 7})\approx O(n^{2.807})$ |
+| Algorithm                                            | Time                                                                                                                        |
+| --------------------                                 | --------------------------------------------------------------------------------------------------------------------------- |
+| [DFS](Graphs/src/DFS.java)                           | $O(V + E)$                                                                                                                  |
+| [BFS](Graphs/src/BFS.java)                           | $O(V + E)$                                                                                                                  |
+| [Topological Sort](Graphs/src/TopologicalSort.java)  | $O(V + E)$                                                                                                                  |
+| [Dijsktra](Graphs/src/Dijkstra.java)                 | $O((E+V)\log V)$                                                                                                            |
+| Borůvka (MST)                                        | $O(E \ \log \ V)$                                                                                                           |
+| [Kruskal (MST)](Graphs/src/Dijkstra.java)            | $O(E \ \log \ E)$ or $O(E \ \log \ V)$                                                                                      |
+| Prim (MST)                                           | Binary heap: <br>$O(E \ \log \ V)$<br><br>Fibonacci heap: <br>$O(E + V \log \ V)$<br><br>Matrix: <br>$O(V^2)$               |
+| [Bellman-Ford](Graphs/src/BellmanFord.java)          | $O(V\cdot E)$                                                                                                               |
+| [Floyd-Warshall](Graphs/src/FloydWarshall.java)      | $O(V^3)$                                                                                                                    |
+| Johnson                                              | Using binary-heap Dijkstra:<br>$O(V(E+V)\log V)$                                                                            |
+| Matrixmultiplikation                                 | Standard:<br>$O(n^3)$<br><br>It. squaring:<br>$O(n^3 \ \log \ n)$<br><br>With Strassen:<br>$O(n^{\log_2 7})\approx O(n^{2.807})$ |
 
 ### Selection
 
