@@ -47,7 +47,7 @@ $n$ - input array length
 
 
 ### Graphs
-$V = n$ (number of vertices $\lvert V \rvert$) 
+$V = n$ (number of vertices $\lvert V \rvert$) <br>
 $E = m$ (number of edges $\lvert E \rvert$)
 
 | Algorithm                                            | Time                                                                                                                        |
@@ -72,7 +72,7 @@ $E = m$ (number of edges $\lvert E \rvert$)
 
 
 ## Datastructures
-ADT - Abstract Data Types
+ADT - Abstract Data Types <br>
 $n$ - length of input
 
 ### ADT List
