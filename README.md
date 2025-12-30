@@ -15,35 +15,35 @@ Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, and Clifford Stein - I
 ## Algorithms
 ### Search 
 
-| Algorithm     | Time        |
-| ------------- | ----------- |
-| Linear Search | $O(n)$      |
-| Binary Search | $O(\log \ n)$ |
+| Algorithm                                     | Time          |
+|-----------------------------------------------|---------------|
+| [Linear Search](Search/src/LinearSearch.java) | $O(n)$        |
+| [Binary Search](Search/src/BinarySearch.java) | $O(\log \ n)$ |
 
 ### Sort 
 
-| Algorithm                                        | Time                                                              | Swaps             | Memory | In-place |
-| --------------                                   | -------------------------------------------------------------     | -------------     | ------ | -------- |
-| [Bubble Sort](Sorting/src/BubbleSort.java)       | $O(n^2)$                                                          | $O(n^2)$          | $O(1)$ | Yes      |
-| [Selection sort](Sorting/src/SelectionSort.java) | $O(n^2)$                                                          | $O(n)$            | $O(1)$ | Yes      |
-| [Insertion Sort](Sorting/src/InsertionSort.java) | $O(n \ \log \ n)$                                                 | $O(n^2)$          | $O(1)$ | Yes      |
-| [Merge Sort](Sorting/src/MergeSort.java)         | $O(n \ \log \ n)$                                                 | $O(n \ \log \ n)$ | $O(n)$ | No       |
-| [Quicksort](Sorting/src/Quicksort.java)          | $O(n^2)$ - sorted input<br><br>$O(n \ log \ n)$ - rand. input     |                   | $O(1)$ | Yes      |
-| [Heapsort](Sorting/src/Heapsort.java)            | $O (n \ \log \ n)$                                                |                   | $O(1)$ | Yes      |
+| Algorithm                                         | Time                                                              | Swaps             | Memory | In-place |
+|---------------------------------------------------| -------------------------------------------------------------     | -------------     | ------ | -------- |
+| [Bubble Sort](Sorting/src/BubbleSort.java)        | $O(n^2)$                                                          | $O(n^2)$          | $O(1)$ | Yes      |
+| [Selection sort](Sorting/src/SelectionSort.java)  | $O(n^2)$                                                          | $O(n)$            | $O(1)$ | Yes      |
+| [Insertion Sort](Sorting/src/InsertionSort.java)  | $O(n \ \log \ n)$                                                 | $O(n^2)$          | $O(1)$ | Yes      |
+| [Merge Sort](Sorting/src/MergeSort.java)          | $O(n \ \log \ n)$                                                 | $O(n \ \log \ n)$ | $O(n)$ | No       |
+| [Quicksort](Sorting/src/Quicksort.java)           | $O(n^2)$ - sorted input<br><br>$O(n \ log \ n)$ - rand. input     |                   | $O(1)$ | Yes      |
+| [Heapsort](Sorting/src/Heapsort.java)             | $O (n \ \log \ n)$                                                |                   | $O(1)$ | Yes      |
 
 ### Dynamic Programming
 $n$ - input array length
 
-| Algorithm / Problem                                                                    | Time                                | Memory                                                               |
-| -------------------------------------------------------------------------------------- | ----------------------------------- |----------------------------------------------------------------------|
-| Fibonacci Numbers                                                                      | $O(n)$                              | $O(n)$<br><br>Optimised: <br>$O(1)$                                  |
-| Jump Game                                                                              | $O(n)$                              |                                                                      |
-| Longest Common Subsequence<br>($m$ - length of string 1)<br>($n$ - length of string 2) | $O(m\cdot n)$                       |                                                                      |
-| Edit distance<br>($m$ - length of string 1)<br>($n$ - length of string 2)              | $O(m\cdot n)$<br>                   |                                                                      |
-| Subset sum                                                                             | $O(n \cdot sum)$ (pseudopolynomial) | $\Theta(m\cdot n)$<br><br>Optimised: <br>$\Theta(n)$  or $\Theta(m)$ |
-| Knapsack 0-1 (2D)<br>($W$ - knapsack capacity)                                         | $O(n\cdot W)$<br>                   | $O(n\cdot W)$<br><br>Optimised: <br> $O(n\cdot W/K)$                 |
-| Longest Ascending Subsequence                                                          | $O(n^2)$                            |                                                                      |
-| Matrix Chain Multiplication                                                            | $O(n^3)$                            |                                                                      |
+| Algorithm / Problem                                                                                                                            | Time                                | Memory                                                               |
+|------------------------------------------------------------------------------------------------------------------------------------------------| ----------------------------------- |----------------------------------------------------------------------|
+| [Fibonacci Numbers](DynamicProgramming/src/FibonacciNumbers.java)                                                                              | $O(n)$                              | $O(n)$<br><br>Optimised: <br>$O(1)$                                  |
+| Jump Game                                                                                                                                      | $O(n)$                              |                                                                      |
+| [Longest Common Subsequence](DynamicProgramming/src/LongestCommonSubsequence.java)<br>($m$ - length of string 1)<br>($n$ - length of string 2) | $O(m\cdot n)$                       |                                                                      |
+| [Edit distance](DynamicProgramming/src/EditDistance.java)<br>($m$ - length of string 1)<br>($n$ - length of string 2)                          | $O(m\cdot n)$<br>                   |                                                                      |
+| Subset sum                                                                                                                                     | $O(n \cdot sum)$ (pseudopolynomial) | $\Theta(m\cdot n)$<br><br>Optimised: <br>$\Theta(n)$  or $\Theta(m)$ |
+| [Knapsack 0-1 (2D)](DynamicProgramming/src/Knapsack2D.java)<br>($W$ - knapsack capacity)                                                       | $O(n\cdot W)$<br>                   | $O(n\cdot W)$<br><br>Optimised: <br> $O(n\cdot W/K)$                 |
+| Longest Ascending Subsequence                                                                                                                  | $O(n^2)$                            |                                                                      |
+| Matrix Chain Multiplication                                                                                                                    | $O(n^3)$                            |                                                                      |
 
 
 ### Graphs
