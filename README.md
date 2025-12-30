@@ -13,14 +13,14 @@ Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, and Clifford Stein - I
 # Runtime tables
 
 ## Algorithms
-#### Search 
+### Search 
 
 | Algorithm     | Time        |
 | ------------- | ----------- |
 | Linear Search | $O(n)$      |
 | Binary Search | $O(\log n)$ |
 
-#### Sort 
+### Sort 
 
 | Algorithm      | TIme                                                          | Swaps         | Memory | In-place |
 | -------------- | ------------------------------------------------------------- | ------------- | ------ | -------- |
@@ -31,7 +31,7 @@ Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, and Clifford Stein - I
 | Quicksort      | $O(n^2)$ - sorted input<br><br>$O(n \ log \ n)$ - rand. input |               | $O(1)$ | Yes      |
 | Heapsort       | $O (n \ log \ n)$                                             |               | $O(1)$ | Yes      |
 
-#### Dynamic Programming
+### Dynamic Programming
 $n$ - input array length
 
 | Algorithm / Problem                                                                    | Time                                | Memory                                                               |
@@ -46,7 +46,7 @@ $n$ - input array length
 | Matrix Chain Multiplication                                                            | $O(n^3)$                            |                                                                      |
 
 
-#### Graphs
+### Graphs
 $V = n$ (number of vertices $\lvert V \rvert$) 
 $E = m$ (number of edges $\lvert E \rvert$)
 
@@ -64,7 +64,7 @@ $E = m$ (number of edges $\lvert E \rvert$)
 | Johnson              | Using binary-heap Dijkstra:<br>$O(V(E+V)\log V)$                                                                            |
 | Matrixmultiplikation | Standard:<br>$O(n3)$<br><br>It. squaring:<br>$O(n^3 \log n)$<br><br>With Strassen:<br>$O(n^{\log_2 7})\approx O(n^{2.807})$ |
 
-#### Selection
+### Selection
 
 | Algorithm         | Runtime |
 | ----------------- | ------- |
@@ -74,7 +74,7 @@ $E = m$ (number of edges $\lvert E \rvert$)
 ## Datastructures
 ADT - Abstract Data Types
 
-#### ADT List
+### ADT List
 $l$ - length
 
 | Implementation     | $\text{insert}(k,L)$ (at end)  | $\text{get}(i,L)$ | $\text{insertAfter}(k,k',L)$ | $\text{delete}(k,L)$ |
@@ -83,7 +83,7 @@ $l$ - length
 | Singly Linked List | $O(1)$<br>(w. ptr to last el.) | $O(l)$            | $O(1)$                       | $O(l)$               |
 | Double Linked List | $O(1)$                         | $O(l)$            | $O(1)$                       | $O(1)$               |
 
-#### Stacks, Queues, and Priority Queues
+### Stacks, Queues, and Priority Queues
 
 | ADT            | Typical Implementation                     | Opertions              | Runtime     |
 | -------------- | ------------------------------------------ | ---------------------- | ----------- |
@@ -91,7 +91,7 @@ $l$ - length
 | Queue (FIFO)   | Singly Linked List <br>(with tail pointer) | `enqueue`, `dequeue`   | $O(1)$      |
 | Priority Queue | (Max-)heap                                 | `insert`, `extractMax` | $O(\log n)$ |
 
-#### ADT Dictionary
+### ADT Dictionary
 $x$ - key, $W$ - dictionaty 
 
 | Implementation                                     | $\text{search}(x, W)$                   | $\text{insert}(x, W)$ | $\text{delete}(x, W)$ |
