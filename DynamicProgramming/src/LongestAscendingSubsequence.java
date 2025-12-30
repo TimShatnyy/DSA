@@ -1,4 +1,8 @@
 import java.util.Arrays;
+// Algorithm: Longest Ascending Subsequence (Longest Increasing Subsequence)
+// Runtime: O(n^2)
+// use:
+// - find the longest subsequence in the given array which has increasing values
 
 public class LongestAscendingSubsequence {
 

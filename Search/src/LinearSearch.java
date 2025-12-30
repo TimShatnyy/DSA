@@ -1,3 +1,8 @@
+// Algorithm: Linear Search
+// Runtime: O(n)
+// use:
+// - find an index of a value in an array
+
 public class LinearSearch {
 
     public static void main(String[] args) {

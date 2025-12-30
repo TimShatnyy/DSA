@@ -1,5 +1,10 @@
 import java.util.Arrays;
 
+// Algorithm: Binary Search
+// Runtime: O(log n)
+// use:
+// - find an index of a value in a sorted (ascendingly) array
+
 public class BinarySearch {
 
     public static void main(String[] args) {

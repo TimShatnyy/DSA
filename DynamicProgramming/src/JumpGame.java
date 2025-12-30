@@ -1,4 +1,8 @@
 import java.util.Arrays;
+// Algorithm: Jump Game
+// Runtime: O(n)
+// use:
+// - find the minimum number of jumps to reach the end of an array
 
 public class JumpGame {
 
