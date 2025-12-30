@@ -73,6 +73,7 @@ $E = m$ (number of edges $\lvert E \rvert$)
 
 ## Datastructures
 ADT - Abstract Data Types
+$n$ - length of input
 
 ### ADT List
 $l$ - length
@@ -92,7 +93,7 @@ $l$ - length
 | Priority Queue | (Max-)heap                                 | `insert`, `extractMax` | $O(\log \ n)$ |
 
 ### ADT Dictionary
-$x$ - key, $W$ - dictionaty 
+$x$ - key, $W$ - dictionary 
 
 | Implementation                                     | $\text{search}(x, W)$                     | $\text{insert}(x, W)$   | $\text{delete}(x, W)$ |
 | -------------------------------------------------- | ---------------------------------------   | ---------------------   | --------------------- |
