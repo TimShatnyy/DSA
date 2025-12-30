@@ -52,15 +52,15 @@ $E = m$ (number of edges $\lvert E \rvert$)
 
 | Algorithm            | Time                                                                                                                        |
 | -------------------- | --------------------------------------------------------------------------------------------------------------------------- |
-| DFS                  | $O(V + E)$                                                                                                                  |
-| BFS                  | $O(V + E)$                                                                                                                  |
-| Topological Sort     | $O(V + E)$                                                                                                                  |
-| Dijsktra             | $O((E+V)\log V)$                                                                                                            |
+| [DFS](Graphs/src/BFS.java)                 | $O(V + E)$                                                                                                                  |
+| [BFS](Graphs/src/DFS.java)                   | $O(V + E)$                                                                                                                  |
+| [Topological Sort](Graphs/src/TopologicalSort.java)     | $O(V + E)$                                                                                                                  |
+| [Dijsktra](Graphs/src/Dijkstra.java)              | $O((E+V)\log V)$                                                                                                            |
 | Borůvka (MST)        | $O(E \ \log \ V)$                                                                                                           |
-| Kruskal              | $O(E \ \log \ E)$ or $O(E \ \log \ V)$                                                                                      |
-| Prim                 | Binary heap: <br>$O(E \ \log \ V)$<br><br>Fibonacci heap: <br>$O(E + V \log \ V)$<br><br>Matrix: <br>$O(V^2)$               |
-| Bellman-Ford         | $O(V\cdot E)$                                                                                                               |
-| Floyd-Warshall       | $O(V^3)$                                                                                                                    |
+| [Kruskal (MST)](Graphs/src/Dijkstra.java)             | $O(E \ \log \ E)$ or $O(E \ \log \ V)$                                                                                      |
+| Prim (MST)                | Binary heap: <br>$O(E \ \log \ V)$<br><br>Fibonacci heap: <br>$O(E + V \log \ V)$<br><br>Matrix: <br>$O(V^2)$               |
+| [Bellman-Ford](Graphs/src/BellmanFord.java)        | $O(V\cdot E)$                                                                                                               |
+| [Floyd-Warshall](Graphs/src/FloydWarshall.java)       | $O(V^3)$                                                                                                                    |
 | Johnson              | Using binary-heap Dijkstra:<br>$O(V(E+V)\log V)$                                                                            |
 | Matrixmultiplikation | Standard:<br>$O(n^3)$<br><br>It. squaring:<br>$O(n^3 \ \log \ n)$<br><br>With Strassen:<br>$O(n^{\log_2 7})\approx O(n^{2.807})$ |
 
