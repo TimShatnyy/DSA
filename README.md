@@ -28,7 +28,7 @@ Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, and Clifford Stein - I
 | [Selection sort](Sorting/src/SelectionSort.java) | $O(n^2)$                                                          | $O(n)$          | $O(1)$ | Yes      |
 | [Insertion Sort](Sorting/src/InsertionSort.java) | $O(n \ \log \ n)$                                                 | $O(n^2)$        | $O(1)$ | Yes      |
 | [Merge Sort](Sorting/src/MergeSort.java)     | $O(n \ \log \ n)$                                                 | $O(n \ \log \ n)$ | $O(n)$ | No       |
-| [Quicksort](Sorting/src/QuickSort.java)      | $O(n^2)$ - sorted input<br><br>$O(n \ log \ n)$ - rand. input     |                 | $O(1)$ | Yes      |
+| [Quicksort](Sorting/src/Quicksort.java)      | $O(n^2)$ - sorted input<br><br>$O(n \ log \ n)$ - rand. input     |                 | $O(1)$ | Yes      |
 | [Heapsort](Sorting/src/Heapsort.java)       | $O (n \ \log \ n)$                                                |                 | $O(1)$ | Yes      |
 
 ### Dynamic Programming
