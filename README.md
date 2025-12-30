@@ -55,9 +55,9 @@ $E = m$ (number of edges $\lvert E \rvert$)
 | [DFS](Graphs/src/DFS.java)                           | $O(V + E)$                                                                                                                  |
 | [BFS](Graphs/src/BFS.java)                           | $O(V + E)$                                                                                                                  |
 | [Topological Sort](Graphs/src/TopologicalSort.java)  | $O(V + E)$                                                                                                                  |
-| [Dijsktra](Graphs/src/Kruskal.java)                  | $O((E+V)\log V)$                                                                                                            |
+| [Dijsktra](Graphs/src/Dijkstra.java)                 | $O((E+V)\log V)$                                                                                                            |
 | Borůvka (MST)                                        | $O(E \ \log \ V)$                                                                                                           |
-| [Kruskal (MST)](Graphs/src/Dijkstra.java)            | $O(E \ \log \ E)$ or $O(E \ \log \ V)$                                                                                      |
+| [Kruskal (MST)](Graphs/src/Kruskal.java)             | $O(E \ \log \ E)$ or $O(E \ \log \ V)$                                                                                      |
 | Prim (MST)                                           | Binary heap: <br>$O(E \ \log \ V)$<br><br>Fibonacci heap: <br>$O(E + V \log \ V)$<br><br>Matrix: <br>$O(V^2)$               |
 | [Bellman-Ford](Graphs/src/BellmanFord.java)          | $O(V\cdot E)$                                                                                                               |
 | [Floyd-Warshall](Graphs/src/FloydWarshall.java)      | $O(V^3)$                                                                                                                    |
