@@ -73,6 +73,7 @@ $E = m$ (number of edges $\lvert E \rvert$)
 
 ## Datastructures
 ADT - Abstract Data Types
+
 $n$ - length of input
 
 ### ADT List
