@@ -35,13 +35,13 @@ Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, and Clifford Stein - I
 $n$ - input array length
 
 | Algorithm / Problem                                                                    | Time                                | Memory                                                               |
-| -------------------------------------------------------------------------------------- | ----------------------------------- | -------------------------------------------------------------------- |
+| -------------------------------------------------------------------------------------- | ----------------------------------- |----------------------------------------------------------------------|
 | Fibonacci Numbers                                                                      | $O(n)$                              | $O(n)$<br><br>Optimised: <br>$O(1)$                                  |
 | Jump Game                                                                              | $O(n)$                              |                                                                      |
 | Longest Common Subsequence<br>($m$ - length of string 1)<br>($n$ - length of string 2) | $O(m\cdot n)$                       |                                                                      |
 | Edit distance<br>($m$ - length of string 1)<br>($n$ - length of string 2)              | $O(m\cdot n)$<br>                   |                                                                      |
 | Subset sum                                                                             | $O(n \cdot sum)$ (pseudopolynomial) | $\Theta(m\cdot n)$<br><br>Optimised: <br>$\Theta(n)$  or $\Theta(m)$ |
-| Knapsack 0-1 (2D)<br>($W$ - knapsack capacity)                                         | $O(n\cdot W)$<br>                   | $O(n\cdot W)$<br><br>Optimised: $O(n\cdot W/K)$                      |
+| Knapsack 0-1 (2D)<br>($W$ - knapsack capacity)                                         | $O(n\cdot W)$<br>                   | $O(n\cdot W)$<br><br>Optimised: <br> $O(n\cdot W/K)$                 |
 | Longest Ascending Subsequence                                                          | $O(n^2)$                            |                                                                      |
 | Matrix Chain Multiplication                                                            | $O(n^3)$                            |                                                                      |
 
