@@ -18,7 +18,7 @@ Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, and Clifford Stein - I
 | Algorithm     | Time        |
 | ------------- | ----------- |
 | Linear Search | $O(n)$      |
-| Binary Search | $O(\log n)$ |
+| Binary Search | $O(\log \ n)$ |
 
 ### Sort 
 
@@ -27,7 +27,7 @@ Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, and Clifford Stein - I
 | [Bubble Sort](Sorting/src/BubbleSort.java)    | $O(n^2)$                                                      | $O(n^2)$      | $O(1)$ | Yes      |
 | Selection sort | $O(n^2)$                                                          | $O(n)$          | $O(1)$ | Yes      |
 | Insertion Sort | $O(n \ \log \ n)$                                                 | $O(n^2)$        | $O(1)$ | Yes      |
-| Merge Sort     | $O(n \log \ n)$                                                   | $O(n \log \ n)$ | $O(n)$ | No       |
+| Merge Sort     | $O(n \ \log \ n)$                                                 | $O(n \ \log \ n)$ | $O(n)$ | No       |
 | Quicksort      | $O(n^2)$ - sorted input<br><br>$O(n \ log \ n)$ - rand. input     |                 | $O(1)$ | Yes      |
 | Heapsort       | $O (n \ \log \ n)$                                                |                 | $O(1)$ | Yes      |
 
@@ -62,7 +62,7 @@ $E = m$ (number of edges $\lvert E \rvert$)
 | Bellman-Ford         | $O(V\cdot E)$                                                                                                               |
 | Floyd-Warshall       | $O(V^3)$                                                                                                                    |
 | Johnson              | Using binary-heap Dijkstra:<br>$O(V(E+V)\log V)$                                                                            |
-| Matrixmultiplikation | Standard:<br>$O(n3)$<br><br>It. squaring:<br>$O(n^3 \log n)$<br><br>With Strassen:<br>$O(n^{\log_2 7})\approx O(n^{2.807})$ |
+| Matrixmultiplikation | Standard:<br>$O(n^3)$<br><br>It. squaring:<br>$O(n^3 \ \log \ n)$<br><br>With Strassen:<br>$O(n^{\log_2 7})\approx O(n^{2.807})$ |
 
 ### Selection
 
@@ -94,13 +94,13 @@ $l$ - length
 ### ADT Dictionary
 $x$ - key, $W$ - dictionaty 
 
-| Implementation                                     | $\text{search}(x, W)$                   | $\text{insert}(x, W)$   | $\text{delete}(x, W)$ |
-| -------------------------------------------------- | --------------------------------------- | ---------------------   | --------------------- |
-| Unsorted Array                                     | $O(n)$                                  | $O(1)$                  | $O(n)$                |
-| Sorted Array                                       | $O(\log n)$                             | $O(n)$                  | $O(n)$                |
-| Doubly Linked List                                 | $O(n)$                                  | $O(1)$                  | $O(n)$                |
-| Naive Binary Search Tree<br>($h$ - height of tree) | $O(h)$ <br>(up to $O(n)$ if unbalanced) | $O(h)$                  | $O(h)$                |
-| 2-3 Tree                                           | $O(\log n)$                             | $O(\log \ n)$           | $O(\log \ n)$         |
-| AVL Tree                                           | $O(\log n)$                             | $O(\log \ n)$           | $O(\log \ n)$         |
+| Implementation                                     | $\text{search}(x, W)$                     | $\text{insert}(x, W)$   | $\text{delete}(x, W)$ |
+| -------------------------------------------------- | ---------------------------------------   | ---------------------   | --------------------- |
+| Unsorted Array                                     | $O(n)$                                    | $O(1)$                  | $O(n)$                |
+| Sorted Array                                       | $O(\log n)$                               | $O(n)$                  | $O(n)$                |
+| Doubly Linked List                                 | $O(n)$                                    | $O(1)$                  | $O(n)$                |
+| Naive Binary Search Tree<br>($h$ - height of tree) | $O(h)$ <br>(up to $O(n)$ if unbalanced)   | $O(h)$                  | $O(h)$                |
+| 2-3 Tree                                           | $O(\log \ n)$                             | $O(\log \ n)$           | $O(\log \ n)$         |
+| AVL Tree                                           | $O(\log \ n)$                             | $O(\log \ n)$           | $O(\log \ n)$         |
 
 
