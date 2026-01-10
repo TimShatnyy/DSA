@@ -3,7 +3,7 @@
 // use:
 // - find how many ways are there to give a change with given types of coins
 
-public class coinChange {
+public class CoinChange {
 
     public static void main(String[] args) {
         int[] coins = {1, 2, 3};
