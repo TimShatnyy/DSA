@@ -54,7 +54,7 @@ public class Dijkstra {
                 int neighbourDistance = neighbour[1];
 
                 // if there is a shorter path to neighbour through current vertex, update it
-                if (distances[currentVertex] + neighbourDistance < distances[neighbourVertex]) {
+                if (distances[neighbourVertex] > distances[currentVertex] + neighbourDistance) {
                     distances[neighbourVertex] = distances[currentVertex] + neighbourDistance;
                     minHeap.offer(new int[]{distances[neighbourVertex], neighbourVertex});
                 }

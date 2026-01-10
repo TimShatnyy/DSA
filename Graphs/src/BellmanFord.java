@@ -6,7 +6,7 @@ import java.util.Queue;
 // Algorithm: Bellman-Ford
 // Runtime: O(|V| * |E|)
 // usage:
-// - find the shortest distances from a source to a target
+// - find the shortest distances from a single source to all vertices in a weighted graph
 // - works with negatively weighted edges but without negative cycles!
 // - detect negative cycles in a graph
 
