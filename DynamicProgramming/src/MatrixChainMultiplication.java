@@ -21,7 +21,7 @@ public class MatrixChainMultiplication {
 
         // build solutions from short subchains to longer ones
         for (int chainLength = 2; chainLength < length; chainLength++) {
-            // chose i and j for the current subchain length
+            // choose i and j for the current subchain length
             for (int i = 0; i < length - chainLength; i++){
                 int j = i + chainLength;
                 // initialise best cost to infinity
@@ -38,9 +38,7 @@ public class MatrixChainMultiplication {
 
                     // Update only if it smaller than the current value - this
                     // means we are taking minimum (optimal) value
-                    if (cost < dp[i][j]) {
-                        dp[i][j] = cost;
-                    }
+                    dp[i][j] = Math.min(dp[i][j], cost);
                 }
             }
         }
